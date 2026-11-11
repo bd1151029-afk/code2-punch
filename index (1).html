@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>莫思清 | 個人網頁</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Noto Sans TC -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            900: '#14532d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f1f5f9; /* slate-100 */
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased min-h-screen flex items-center justify-center p-4 md:p-8 selection:bg-brand-100 selection:text-brand-900">
+
+    <!-- Main Profile Card -->
+    <main class="w-full max-w-3xl bg-white rounded-3xl shadow-xl overflow-hidden relative">
+        
+        <!-- Decorative Header Background -->
+        <div class="h-32 md:h-40 bg-gradient-to-r from-teal-50 to-emerald-100 w-full absolute top-0 left-0"></div>
+
+        <div class="relative pt-20 md:pt-24 px-8 md:px-12 pb-10">
+            
+            <!-- Avatar / Icon -->
+            <div class="w-24 h-24 md:w-32 md:h-32 bg-white rounded-full flex items-center justify-center shadow-md border-4 border-white mx-auto absolute -top-12 md:-top-16 left-1/2 transform -translate-x-1/2">
+                <i class="fa-solid fa-user-astronaut text-4xl md:text-5xl text-slate-300"></i>
+            </div>
+
+            <!-- Profile Info -->
+            <div class="text-center mt-10 md:mt-12 mb-10">
+                <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-2">莫思清</h1>
+                <p class="text-lg text-emerald-600 font-medium mb-6">黎明技術學院 數位多媒體系</p>
+                
+                <div class="inline-block bg-slate-50 px-6 py-3 rounded-2xl border border-slate-100 relative">
+                    <i class="fa-solid fa-quote-left absolute -top-2 -left-2 text-slate-200 text-xl"></i>
+                    <p class="text-slate-600 font-medium">我學習比較慢，但是我會努力學習</p>
+                </div>
+            </div>
+
+            <hr class="border-slate-100 mb-10">
+
+            <!-- Details Grid -->
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Skills -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-teal-50 flex items-center justify-center mr-3">
+                            <i class="fa-solid fa-star text-teal-500 text-sm"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-slate-800">我的技能</h2>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center bg-slate-50 rounded-xl p-3 border border-slate-100">
+                            <i class="fa-solid fa-camera-retro text-teal-500 w-6 text-center mr-2"></i>
+                            <span class="text-slate-700 font-medium">拍照</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Interests -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-indigo-50 flex items-center justify-center mr-3">
+                            <i class="fa-solid fa-heart text-indigo-400 text-sm"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-slate-800">我的興趣</h2>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center bg-slate-50 rounded-xl p-3 border border-slate-100">
+                            <i class="fa-solid fa-book-open text-indigo-400 w-6 text-center mr-2"></i>
+                            <span class="text-slate-700 font-medium">讀書</span>
+                        </li>
+                        <li class="flex items-center bg-slate-50 rounded-xl p-3 border border-slate-100">
+                            <i class="fa-solid fa-moon text-indigo-400 w-6 text-center mr-2"></i>
+                            <span class="text-slate-700 font-medium">睡覺</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+                <h3 class="text-center font-bold text-slate-700 mb-6 tracking-wider">聯繫方式</h3>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
+                    
+                    <!-- Email -->
+                    <a href="mailto:bd1151007@venus.lit.edu.tw" class="flex items-center group w-full md:w-auto">
+                        <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm border border-slate-100 group-hover:bg-teal-50 group-hover:border-teal-200 transition-all duration-300">
+                            <i class="fa-solid fa-envelope text-slate-400 group-hover:text-teal-500 text-lg"></i>
+                        </div>
+                        <span class="ml-3 text-slate-600 font-medium group-hover:text-teal-600 transition-colors text-sm break-all">bd1151007@venus.lit.edu.tw</span>
+                    </a>
+
+                    <!-- Line -->
+                    <button onclick="copyToClipboard('0625707284', 'Line ID')" class="flex items-center group w-full md:w-auto text-left relative">
+                        <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm border border-slate-100 group-hover:bg-[#F2FBF5] group-hover:border-[#06C755] transition-all duration-300">
+                            <i class="fa-brands fa-line text-slate-400 group-hover:text-[#06C755] text-xl"></i>
+                        </div>
+                        <span class="ml-3 text-slate-600 font-medium group-hover:text-[#06C755] transition-colors text-sm">0625707284</span>
+                    </button>
+
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/_cholhp" target="_blank" rel="noopener noreferrer" class="flex items-center group w-full md:w-auto">
+                        <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm border border-slate-100 group-hover:bg-[#FDF2F7] group-hover:border-[#E1306C] transition-all duration-300">
+                            <i class="fa-brands fa-instagram text-slate-400 group-hover:text-[#E1306C] text-xl"></i>
+                        </div>
+                        <span class="ml-3 text-slate-600 font-medium group-hover:text-[#E1306C] transition-colors text-sm">_cholhp</span>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed top-5 left-1/2 transform -translate-x-1/2 -translate-y-20 opacity-0 bg-slate-800 text-white px-6 py-3 rounded-xl shadow-lg transition-all duration-300 z-50 flex items-center pointer-events-none">
+        <i class="fa-solid fa-circle-check text-emerald-400 mr-3"></i>
+        <span id="toastMessage" class="font-medium text-sm">已複製</span>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Copy to clipboard function for Line ID
+        function copyToClipboard(text, label) {
+            const el = document.createElement('textarea');
+            el.value = text;
+            document.body.appendChild(el);
+            el.select();
+            
+            try {
+                document.execCommand('copy');
+                showToast(label + ' 已複製到剪貼簿！');
+            } catch (err) {
+                console.error('Failed to copy', err);
+            }
+            
+            document.body.removeChild(el);
+        }
+
+        // Show Toast Notification
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toastMessage');
+            
+            toastMessage.textContent = message;
+            
+            // Slide down and fade in
+            toast.classList.remove('-translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+            
+            // Hide after 2.5 seconds
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('-translate-y-20', 'opacity-0');
+            }, 2500);
+        }
+    </script>
+</body>
+</html>
